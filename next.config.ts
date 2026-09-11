@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
+const repoName = "junto-creators-portal";
+const isGithubPagesBuild = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  trailingSlash: true,
+  ...(isGithubPagesBuild
+    ? {
+        basePath: `/${repoName}`,
+        assetPrefix: `/${repoName}/`,
+      }
+    : {}),
 };
 
 export default nextConfig;
