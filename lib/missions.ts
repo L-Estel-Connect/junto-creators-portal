@@ -2,67 +2,102 @@ export type Mission = {
   id: string;
   number: string;
   title: string;
-  tagline: string;
+  subtitle: string;
   description: string;
   reward: string;
-  effort: "Quick" | "Medium" | "Featured";
+  format: string;
+  ctaLabel: string;
   gradient: string;
 };
 
 export const missions: Mission[] = [
   {
-    id: "welcome",
+    id: "wtf-group-dating",
     number: "01",
-    title: "Say Hello",
-    tagline: "Introduce yourself",
-    description:
-      "Post a short intro Reel telling your community why you joined the Junto Creator Program.",
-    reward: "50 Junto Points",
-    effort: "Quick",
+    title: "WTF IS GROUP DATING?",
+    subtitle: "Presenta el group dating a tu manera.",
+    description: `¿Qué pasa cuando, en lugar de tener una cita solo/a, sales con tus amigos y conocéis a otro grupo?
+
+Explícalo, interprétalo o conviértelo en contenido.
+
+POV, humor, storytelling, conversación entre amigos…
+
+Tu estilo. Tu audiencia.`,
+    reward: "100 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-coral to-tangerine",
   },
   {
-    id: "spotlight",
+    id: "send-single-friend",
     number: "02",
-    title: "Content Spotlight",
-    tagline: "Show your best work",
-    description:
-      "Share your favorite piece of content using the #JuntoCreator tag for a chance to be featured.",
-    reward: "120 Junto Points",
-    effort: "Medium",
+    title: "SEND THIS TO YOUR SINGLE FRIEND",
+    subtitle: "Todos tenemos ese amigo soltero.",
+    description: `El que tiene las mejores historias de citas.
+El que está cansado de las dating apps.
+El que nunca iría solo a conocer gente.
+O el que claramente debería probar Junto contigo.
+
+Hazlo meme, POV, sketch, conversación o cualquier formato que funcione contigo.`,
+    reward: "100 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-tangerine to-biscuit",
   },
   {
-    id: "community-boost",
+    id: "we-tried-junto",
     number: "03",
-    title: "Community Boost",
-    tagline: "Bring your people",
-    description:
-      "Tag three creator friends who should join you on Junto and start their own missions.",
-    reward: "80 Junto Points",
-    effort: "Quick",
+    title: "WE TRIED JUNTO",
+    subtitle: "Prueba Junto con tus amigos.",
+    description: `Crea vuestro grupo, descubre cómo funciona y comparte la experiencia desde vuestra perspectiva.
+
+No buscamos un tutorial.
+
+Queremos ver qué pasa cuando tú y tus amigos probáis Junto de verdad.`,
+    reward: "100 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-biscuit to-wax",
   },
   {
-    id: "style-challenge",
+    id: "dating-but-social",
     number: "04",
-    title: "Style Challenge",
-    tagline: "Make it yours",
-    description:
-      "Put your own spin on this month's creative prompt and share it with your audience.",
-    reward: "150 Junto Points",
-    effort: "Featured",
+    title: "DATING, BUT MAKE IT SOCIAL",
+    subtitle: "Tu visión sobre el dating moderno.",
+    description: `Ghosting.
+Red flags.
+Dating fatigue.
+First dates.
+Dating apps.
+Historias imposibles.
+
+Parte de algo que tu audiencia reconozca y presenta otra manera de conocer gente:
+
+con tus amigos.
+
+Storytime, humor, POV, sketch o tu propio formato.`,
+    reward: "100 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-coral to-wax",
   },
   {
-    id: "referral",
+    id: "your-idea",
     number: "05",
-    title: "Referral Mission",
-    tagline: "Grow the crew",
-    description:
-      "Invite one creator friend to apply. When they're accepted, you both get rewarded.",
-    reward: "200 Junto Points",
-    effort: "Featured",
+    title: "YOUR IDEA",
+    subtitle: "Sorpréndenos.",
+    description: `¿Tienes una idea mejor?
+
+Queremos verla.
+
+Puede ser un trend, un sketch, una historia, un experimento social, una conversación, un formato recurrente de tu perfil o algo completamente nuevo.
+
+Solo hay una condición:
+
+Tiene que sentirse como contenido tuyo.`,
+    reward: "100 €",
+    format: "Reel / TikTok",
+    ctaLabel: "PROPONER MI IDEA",
     gradient: "from-tangerine to-coral",
   },
 ];

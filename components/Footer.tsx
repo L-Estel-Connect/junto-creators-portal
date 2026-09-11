@@ -1,4 +1,4 @@
-export default function SiteFooter() {
+export default function Footer() {
   return (
     <footer className="border-t border-ink/5 px-5 py-10 sm:px-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
@@ -6,7 +6,7 @@ export default function SiteFooter() {
           Junto
         </span>
         <p className="text-xs font-medium uppercase tracking-wide text-ink/40">
-          Creator Program · Private Preview
+          Programa de Creators · Vista previa privada
         </p>
       </div>
     </footer>

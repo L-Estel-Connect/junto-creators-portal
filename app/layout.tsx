@@ -11,12 +11,12 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Junto Creator Program",
   description:
-    "Join the Junto Creator Program. Complete missions, grow your reach, and unlock rewards as a Junto creator.",
+    "Programa de creators de Junto en Madrid. Crea contenido, publícalo en tu perfil y cobra 100 € por cada Reel o TikTok aprobado.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
+    <html lang="es" className={`${montserrat.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-paper text-ink">
         {children}
       </body>
