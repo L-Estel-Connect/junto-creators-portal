@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Junto Creator Program",
   description:
-    "Programa de creators de Junto en Madrid. Crea contenido, publícalo en tu perfil y cobra 100 € por cada Reel o TikTok aprobado.",
+    "Programa de creators de Junto en Madrid. Crea contenido, publícalo en tu perfil y cobra hasta 250 € por Reel o TikTok, según la misión.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -9,27 +9,40 @@ export default function MissionCard({
   onSelect: (mission: Mission) => void;
 }) {
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-ink/5 bg-white p-6 shadow-sm shadow-ink/[0.03] transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-coral/10 sm:p-7">
+    <article
+      className={`flex h-full flex-col rounded-3xl border bg-white p-6 shadow-sm shadow-ink/[0.03] transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-coral/10 sm:p-7 ${
+        mission.featured ? "border-coral/30 ring-1 ring-coral/15" : "border-ink/5"
+      }`}
+    >
       <div className="flex items-start justify-between gap-3">
         <div
-          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${mission.gradient} text-base font-extrabold text-white`}
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${mission.gradient} text-base font-semibold text-white`}
         >
           {mission.number}
         </div>
         <div className="flex flex-col items-end">
-          <span className="text-2xl font-extrabold leading-none text-coral">
+          <span className="text-2xl font-bold leading-none text-coral">
             {mission.reward}
           </span>
-          <span className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-ink/40">
+          <span className="mt-1 text-[11px] font-medium uppercase tracking-wide text-ink/40">
             {mission.format}
           </span>
         </div>
       </div>
 
-      <h3 lang="en" className="mt-5 text-lg font-extrabold uppercase tracking-tight text-ink sm:text-xl">
+      {mission.badge ? (
+        <span className="mt-4 inline-flex w-fit items-center rounded-full bg-ink/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink/60">
+          {mission.badge}
+        </span>
+      ) : null}
+
+      <h3
+        lang="en"
+        className="mt-4 text-lg font-semibold uppercase tracking-tight text-ink sm:text-xl"
+      >
         {mission.title}
       </h3>
-      <p className="mt-1 text-sm font-semibold text-ink/70">
+      <p className="mt-1 text-sm font-medium text-ink/70">
         {mission.subtitle}
       </p>
 
@@ -40,7 +53,7 @@ export default function MissionCard({
       <button
         type="button"
         onClick={() => onSelect(mission)}
-        className="junto-gradient mt-6 w-full rounded-full px-5 py-3.5 text-sm font-extrabold tracking-wide text-white shadow-sm shadow-coral/20 transition-transform active:scale-95"
+        className="junto-gradient mt-6 w-full rounded-full px-5 py-3.5 text-sm font-semibold tracking-wide text-white shadow-sm shadow-coral/20 transition-transform active:scale-95"
       >
         {mission.ctaLabel}
       </button>

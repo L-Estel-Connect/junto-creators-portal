@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MissionsSection from "@/components/MissionsSection";
 import HowItWorks from "@/components/HowItWorks";
-import TrustSection from "@/components/TrustSection";
 import PaymentSection from "@/components/PaymentSection";
 import CreativeSection from "@/components/CreativeSection";
 import PublishingRequirements from "@/components/PublishingRequirements";
@@ -17,7 +16,6 @@ export default function Home() {
         <Hero />
         <MissionsSection />
         <HowItWorks />
-        <TrustSection />
         <PaymentSection />
         <CreativeSection />
         <PublishingRequirements />

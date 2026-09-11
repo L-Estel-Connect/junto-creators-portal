@@ -1,5 +1,5 @@
 export const publishingRequirements: string[] = [
-  "@junto.tech",
+  "@junto.xo",
   "Invitación como collaborator cuando corresponda",
   "CTA acordado",
   "Link o código de tracking",

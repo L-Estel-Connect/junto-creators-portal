@@ -13,11 +13,7 @@ export default function HowItWorks() {
           eyebrow="Así funciona"
           headline="Primero te aprobamos. Después creas."
           description={
-            <p>
-              No queremos que trabajes gratis esperando una respuesta. Tu
-              colaboración y tu recompensa quedan confirmadas antes de que
-              empieces a crear.
-            </p>
+            <p>Tu colaboración y tu recompensa quedan confirmadas antes de crear.</p>
           }
         />
 

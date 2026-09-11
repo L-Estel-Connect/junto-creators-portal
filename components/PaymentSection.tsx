@@ -8,13 +8,8 @@ export default function PaymentSection() {
       <div className="mx-auto max-w-5xl">
         <SectionHeader
           eyebrow="Tu recompensa"
-          headline="100 €. Tú eliges cómo recibirlos."
-          description={
-            <p>
-              Tu método de recompensa queda confirmado antes de empezar a
-              crear.
-            </p>
-          }
+          headline="Tú eliges cómo cobrar."
+          description={<p>Tu método de pago queda confirmado antes de crear.</p>}
         />
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3">

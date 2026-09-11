@@ -12,7 +12,7 @@ export default function ProcessStep({
   return (
     <li className="relative flex gap-4 pb-9 last:pb-0 sm:gap-6">
       <div className="flex flex-col items-center">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink text-sm font-extrabold text-white">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink text-sm font-semibold text-white">
           {step.number}
         </span>
         {!isLast && (
@@ -21,7 +21,7 @@ export default function ProcessStep({
       </div>
 
       <div className="flex-1 pt-1.5">
-        <h3 className="text-lg font-extrabold text-ink sm:text-xl">
+        <h3 className="text-lg font-semibold text-ink sm:text-xl">
           {step.title}
         </h3>
 
@@ -35,11 +35,11 @@ export default function ProcessStep({
 
         {step.highlight ? (
           isReward ? (
-            <div className="junto-gradient mt-4 inline-flex items-center rounded-2xl px-5 py-3.5 text-base font-extrabold tracking-tight text-white shadow-lg shadow-coral/25 sm:text-lg">
+            <div className="junto-gradient mt-4 inline-flex items-center rounded-2xl px-5 py-3.5 text-base font-bold tracking-tight text-white shadow-lg shadow-coral/25 sm:text-lg">
               {step.highlight}
             </div>
           ) : (
-            <span className="mt-3 inline-flex items-center rounded-full bg-coral/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-coral sm:text-sm">
+            <span className="mt-3 inline-flex items-center rounded-full bg-coral/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-coral sm:text-sm">
               {step.highlight}
             </span>
           )

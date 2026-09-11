@@ -16,14 +16,14 @@ export default function SectionHeader({
   return (
     <div className="mx-auto max-w-2xl text-center">
       <span
-        className={`text-xs font-bold uppercase tracking-widest ${
+        className={`text-xs font-semibold uppercase tracking-widest ${
           tone === "dark" ? "text-wax" : "text-coral"
         }`}
       >
         {eyebrow}
       </span>
       <h2
-        className={`mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl ${
+        className={`mt-3 text-3xl font-bold tracking-tight sm:text-4xl ${
           tone === "dark" ? "text-white" : "text-ink"
         }`}
       >

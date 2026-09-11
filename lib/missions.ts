@@ -8,12 +8,31 @@ export type Mission = {
   format: string;
   ctaLabel: string;
   gradient: string;
+  badge?: string;
+  featured?: boolean;
 };
 
 export const missions: Mission[] = [
   {
-    id: "wtf-group-dating",
+    id: "send-single-friend",
     number: "01",
+    title: "SEND THIS TO YOUR SINGLE FRIEND",
+    subtitle: "Todos tenemos ese amigo soltero.",
+    description: `El que tiene las mejores historias de citas.
+El que está cansado de las dating apps.
+El que nunca iría solo a conocer gente.
+O el que claramente debería probar Junto contigo.
+
+Hazlo meme, POV, sketch, conversación o cualquier formato que funcione contigo.`,
+    reward: "50 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
+    gradient: "from-coral to-tangerine",
+    badge: "SIMPLE POV · NO VOICE REQUIRED",
+  },
+  {
+    id: "wtf-group-dating",
+    number: "02",
     title: "WTF IS GROUP DATING?",
     subtitle: "Presenta el group dating a tu manera.",
     description: `¿Qué pasa cuando, en lugar de tener una cita solo/a, sales con tus amigos y conocéis a otro grupo?
@@ -26,42 +45,11 @@ Tu estilo. Tu audiencia.`,
     reward: "100 €",
     format: "Reel / TikTok",
     ctaLabel: "ELEGIR ESTA MISIÓN",
-    gradient: "from-coral to-tangerine",
-  },
-  {
-    id: "send-single-friend",
-    number: "02",
-    title: "SEND THIS TO YOUR SINGLE FRIEND",
-    subtitle: "Todos tenemos ese amigo soltero.",
-    description: `El que tiene las mejores historias de citas.
-El que está cansado de las dating apps.
-El que nunca iría solo a conocer gente.
-O el que claramente debería probar Junto contigo.
-
-Hazlo meme, POV, sketch, conversación o cualquier formato que funcione contigo.`,
-    reward: "100 €",
-    format: "Reel / TikTok",
-    ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-tangerine to-biscuit",
   },
   {
-    id: "we-tried-junto",
-    number: "03",
-    title: "WE TRIED JUNTO",
-    subtitle: "Prueba Junto con tus amigos.",
-    description: `Crea vuestro grupo, descubre cómo funciona y comparte la experiencia desde vuestra perspectiva.
-
-No buscamos un tutorial.
-
-Queremos ver qué pasa cuando tú y tus amigos probáis Junto de verdad.`,
-    reward: "100 €",
-    format: "Reel / TikTok",
-    ctaLabel: "ELEGIR ESTA MISIÓN",
-    gradient: "from-biscuit to-wax",
-  },
-  {
     id: "dating-but-social",
-    number: "04",
+    number: "03",
     title: "DATING, BUT MAKE IT SOCIAL",
     subtitle: "Tu visión sobre el dating moderno.",
     description: `Ghosting.
@@ -76,10 +64,25 @@ Parte de algo que tu audiencia reconozca y presenta otra manera de conocer gente
 con tus amigos.
 
 Storytime, humor, POV, sketch o tu propio formato.`,
-    reward: "100 €",
+    reward: "150 €",
+    format: "Reel / TikTok",
+    ctaLabel: "ELEGIR ESTA MISIÓN",
+    gradient: "from-biscuit to-wax",
+  },
+  {
+    id: "we-tried-junto",
+    number: "04",
+    title: "WE TRIED JUNTO",
+    subtitle: "Vive la experiencia completa.",
+    description: `Prueba Junto de verdad con tus amigos.
+
+Crea vuestro grupo, conecta con otro grupo y queda IRL. Convierte la experiencia — desde el match hasta el plan — en un Reel/TikTok auténtico.`,
+    reward: "250 €",
     format: "Reel / TikTok",
     ctaLabel: "ELEGIR ESTA MISIÓN",
     gradient: "from-coral to-wax",
+    badge: "EXPERIENCIA REAL",
+    featured: true,
   },
   {
     id: "your-idea",
@@ -95,7 +98,7 @@ Puede ser un trend, un sketch, una historia, un experimento social, una conversa
 Solo hay una condición:
 
 Tiene que sentirse como contenido tuyo.`,
-    reward: "100 €",
+    reward: "A convenir",
     format: "Reel / TikTok",
     ctaLabel: "PROPONER MI IDEA",
     gradient: "from-tangerine to-coral",

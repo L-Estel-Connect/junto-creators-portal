@@ -94,7 +94,7 @@ export default function ApplicationModal({
         className="max-h-[92vh] w-full overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl sm:max-w-lg sm:rounded-3xl sm:p-8"
       >
         <div className="flex items-start justify-between gap-4">
-          <span className="text-lg font-extrabold tracking-tight text-ink">
+          <span className="text-lg font-bold tracking-tight text-ink">
             Junto
           </span>
           <button
@@ -128,7 +128,7 @@ export default function ApplicationModal({
             <h2
               id="application-modal-title"
               lang="en"
-              className="mt-1 text-2xl font-extrabold uppercase tracking-tight text-ink"
+              className="mt-1 text-2xl font-semibold uppercase tracking-tight text-ink"
             >
               {mission.title}
             </h2>
@@ -137,7 +137,7 @@ export default function ApplicationModal({
             </p>
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-5">
-              <h3 className="text-base font-extrabold text-ink">
+              <h3 className="text-base font-semibold text-ink">
                 Cuéntanos tu idea
               </h3>
 
@@ -244,7 +244,7 @@ export default function ApplicationModal({
 
               <button
                 type="submit"
-                className="junto-gradient w-full rounded-full px-6 py-4 text-base font-extrabold tracking-wide text-white shadow-lg shadow-coral/25 transition-transform active:scale-95"
+                className="junto-gradient w-full rounded-full px-6 py-4 text-base font-semibold tracking-wide text-white shadow-lg shadow-coral/25 transition-transform active:scale-95"
               >
                 ENVIAR SOLICITUD
               </button>
@@ -254,7 +254,7 @@ export default function ApplicationModal({
           <div className="py-6 text-center">
             <h2
               id="application-modal-title"
-              className="text-2xl font-extrabold tracking-tight text-ink"
+              className="text-2xl font-bold tracking-tight text-ink"
             >
               ¡Solicitud enviada! 🧡
             </h2>
@@ -265,7 +265,7 @@ export default function ApplicationModal({
             <button
               type="button"
               onClick={onClose}
-              className="junto-gradient mt-8 w-full rounded-full px-6 py-4 text-base font-extrabold tracking-wide text-white shadow-lg shadow-coral/25 transition-transform active:scale-95 sm:w-auto"
+              className="junto-gradient mt-8 w-full rounded-full px-6 py-4 text-base font-semibold tracking-wide text-white shadow-lg shadow-coral/25 transition-transform active:scale-95 sm:w-auto"
             >
               VOLVER A LAS MISIONES
             </button>
