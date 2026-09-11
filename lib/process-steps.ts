@@ -24,6 +24,7 @@ export const processSteps: ProcessStep[] = [
     title: "Confirmamos tu colaboración",
     paragraphs: [
       "Acordamos la misión, el contenido, las condiciones de publicación y tu recompensa antes de empezar.",
+      "Firmamos un acuerdo antes de que empieces a crear.",
     ],
     highlight: "TU COLABORACIÓN ESTÁ CONFIRMADA ✓",
   },
