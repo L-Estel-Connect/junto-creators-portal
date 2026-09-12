@@ -39,7 +39,8 @@ export default function CreativeSection() {
         </div>
 
         <ImagePlaceholder
-          label="Espacio para foto editorial de un creator de Junto"
+          label="Grupo de amigos riendo juntos en una terraza de Madrid al atardecer"
+          src="/images/creator-with-friends.png"
           tone="dark"
           className="aspect-[4/5] w-full"
         />

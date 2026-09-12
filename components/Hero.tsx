@@ -61,7 +61,8 @@ export default function Hero() {
         </div>
 
         <ImagePlaceholder
-          label="Espacio para foto o vídeo de creators de Junto"
+          label="Creator grabando un Reel para Junto desde su habitación"
+          src="/images/creator-at-home.png"
           className="aspect-[4/5] w-full lg:aspect-[3/4]"
         />
       </div>
